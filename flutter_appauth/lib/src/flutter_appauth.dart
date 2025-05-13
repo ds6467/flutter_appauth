@@ -29,7 +29,3 @@ class FlutterAppAuth {
   ///
   /// This is done by sending a request to the authorization server's
   /// end session endpoint per the [RP-initiated logout spec](https://openid.net/specs/openid-connect-rpinitiated-1_0.html).
-  Future<EndSessionResponse> endSession(EndSessionRequest request) {
-    return FlutterAppAuthPlatform.instance.endSession(request);
-  }
-}
