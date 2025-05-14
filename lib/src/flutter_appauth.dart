@@ -4,7 +4,7 @@ class FlutterAppAuth {
   const FlutterAppAuth();
 
   /// Convenience method for authorizing and then exchanges code
-  Future<AuthorizationTokenResponse> authorizeAndExchangeCode(
+  Future<AuthorizationTokenResponse?> authorizeAndExchangeCode(
       AuthorizationTokenRequest request) {
     return FlutterAppAuthPlatform.instance.authorizeAndExchangeCode(request);
   }
@@ -13,7 +13,7 @@ class FlutterAppAuth {
   ///
   /// This is done by sending a request to the authorization server's
   /// [authorization endpoint](https://datatracker.ietf.org/doc/html/rfc6749#section-3.1).
-  Future<AuthorizationResponse> authorize(AuthorizationRequest request) {
+  Future<AuthorizationResponse?> authorize(AuthorizationRequest request) {
     return FlutterAppAuthPlatform.instance.authorize(request);
   }
 
@@ -21,7 +21,7 @@ class FlutterAppAuth {
   ///
   /// This is done by sending a request to the authorization server's
   /// [token endpoint](https://datatracker.ietf.org/doc/html/rfc6749#section-3.2).
-  Future<TokenResponse> token(TokenRequest request) {
+  Future<TokenResponse?> token(TokenRequest request) {
     return FlutterAppAuthPlatform.instance.token(request);
   }
 }
