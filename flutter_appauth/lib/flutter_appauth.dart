@@ -5,8 +5,6 @@ export 'package:flutter_appauth_platform_interface/flutter_appauth_platform_inte
         AuthorizationServiceConfiguration,
         AuthorizationTokenRequest,
         AuthorizationTokenResponse,
-        EndSessionRequest,
-        EndSessionResponse,
         ExternalUserAgent,
         FlutterAppAuthOAuthError,
         FlutterAppAuthPlatformErrorDetails,
@@ -15,4 +13,5 @@ export 'package:flutter_appauth_platform_interface/flutter_appauth_platform_inte
         GrantType,
         TokenRequest,
         TokenResponse;
-export 'src/flutter_appauth.dart';
+
+export 'src/flutter_appauth.dart' show FlutterAppAuth;
