@@ -24,12 +24,4 @@ class FlutterAppAuth {
   Future<TokenResponse> token(TokenRequest request) {
     return FlutterAppAuthPlatform.instance.token(request);
   }
-
-  /// Performs an end session/logout request.
-  ///
-  /// This is done by sending a request to the authorization server's
-  /// end session endpoint per the [RP-initiated logout spec](https://openid.net/specs/openid-connect-rpinitiated-1_0.html).
-  Future<EndSessionResponse> endSession(EndSessionRequest request) {
-    return FlutterAppAuthPlatform.instance.endSession(request);
-  }
 }
